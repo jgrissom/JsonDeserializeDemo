@@ -1,19 +1,22 @@
 ﻿using System.Text.Json;
 
 string JsonString = """
-  {
-    "Name": "⚾ Baseball",
-    "Posts": [
-      { "Title": "Pitchers", "Description": "Tobias Myers is my favorite pitcher" },
-      { "Title": "Outfielders", "Description": "Jackson Chourio is my favorite outfielder" }
-    ]
-  }
+  [
+    {
+      "Name": "⚾ Baseball",
+      "Posts": [
+        { "Title": "Pitchers", "Description": "Tobias Myers is my favorite pitcher" },
+        { "Title": "Outfielders", "Description": "Jackson Chourio is my favorite outfielder" }
+      ]
+    },
+    {
+      "Name": "😳 Exercise",
+      "Posts": [
+        { "Title": "Yoga", "Description": "Yoga is a wonderful exercise - Namaste" },
+        { "Title": "Cycling", "Description": "is FUN" },
+        { "Title": "Weight Training", "Description": "Builds more muscle" }
+      ]
+    }
+  ]
 """;
-// Console.WriteLine(JsonString);
-
-Blog? blog = JsonSerializer.Deserialize<Blog>(JsonString)!;
-Console.WriteLine(blog.Name);
-foreach (Post post in blog.Posts)
-{
-  Console.WriteLine($"\t{post.Title} - {post.Description}");
-}
+Console.WriteLine(JsonString);
