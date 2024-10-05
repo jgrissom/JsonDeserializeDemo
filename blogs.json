@@ -1,0 +1,39 @@
+[
+  {
+    "Name": "⚾ Baseball",
+    "Posts": [
+      {
+        "Title": "Pitchers",
+        "Description": "Tobias Myers is my favorite pitcher"
+      },
+      {
+        "Title": "Outfielders",
+        "Description": "Jackson Chourio is my favorite outfielder"
+      }
+    ]
+  },
+  {
+    "Name": "😳 Exercise",
+    "Posts": [
+      {
+        "Title": "Yoga",
+        "Description": "Yoga is a wonderful exercise - Namaste"
+      },
+      { "Title": "Cycling", "Description": "is FUN" },
+      { "Title": "Weight Training", "Description": "Builds more muscle" }
+    ]
+  },
+  {
+    "Name": "🐶 Dogs",
+    "Posts": [
+      {
+        "Title": "Best Pet Ever!!",
+        "Description": "My dog's name is Penny"
+      }
+    ]
+  },
+  {
+    "Name": "🐱 Cats",
+    "Posts": []
+  }
+]
