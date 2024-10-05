@@ -19,4 +19,14 @@ string JsonString = """
     }
   ]
 """;
-Console.WriteLine(JsonString);
+// Console.WriteLine(JsonString);
+
+List<Blog> blogs = JsonSerializer.Deserialize<List<Blog>>(JsonString)!;
+foreach (Blog blog in blogs)
+{
+  Console.WriteLine(blog.Name);
+  foreach (Post post in blog.Posts)
+  {
+    Console.WriteLine($"\t{post.Title} - {post.Description}");
+  }
+}
